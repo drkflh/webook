@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/login.dart';
+import 'package:flutter_application_1/home.dart';
 
 class MenuProfile extends StatelessWidget {
   static const routeName = "/MenuProfile";
@@ -204,8 +205,8 @@ class MenuProfile extends StatelessWidget {
                                       height: 1.4285714285714286),
                                 ),
                                 onPressed: () {
-                                  Navigator.pushNamed(
-                                      context, LoginPage.routeName);
+                                  Navigator.popUntil(context,
+                                      ModalRoute.withName('/LoginPage'));
                                 },
                               ),
                             ],

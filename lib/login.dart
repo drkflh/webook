@@ -4,8 +4,8 @@ import 'package:flutter_application_1/menu/menu_library.dart';
 
 class LoginPage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
   static const routeName = "/LoginPage";
+  _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<LoginPage> {
